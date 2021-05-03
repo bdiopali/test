@@ -1,9 +1,16 @@
-Conway's Game of Life
+Titre
 =====================
 
 Simple pygame implementation of Conway's Game of Life.
 
 .. contents::
+
+.. code:: 
+
+    from jyquickhelper import add_notebook_menu
+    add_notebook_menu()
+    
+    
 
 Screenshot
 ----------

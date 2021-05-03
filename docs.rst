@@ -10,6 +10,18 @@ Simple pygame implementation of Conway's Game of Life.
     from jyquickhelper import add_notebook_menu
     add_notebook_menu()
     
+    def topk_min(ens, k):
+    "Retourne les k plus petits éléments d'un ensemble."
+
+    heap = ens[:k]
+    _heapify_max_bottom(heap)
+
+    for el in ens[k:]:
+        if el < heap[0]:
+            heap[0] = el
+            _heapify_max_up(heap)
+    return heap
+
     
 
 Screenshot
